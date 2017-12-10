@@ -1,4 +1,4 @@
-package ge.mziuri.TSP.server.utility;
+package ge.mziuri.trade.server.utility;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

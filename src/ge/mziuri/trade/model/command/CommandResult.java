@@ -1,4 +1,4 @@
-package ge.mziuri.TSP.model.command;
+package ge.mziuri.trade.model.command;
 
 public enum CommandResult {
 

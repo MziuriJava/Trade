@@ -1,4 +1,4 @@
-package ge.mziuri.TSP.model.item;
+package ge.mziuri.trade.model.item;
 
 import java.io.Serializable;
 

@@ -1,2 +1,7 @@
 ﻿*.iml
 .idea
+/nbproject/private/
+/src/nbproject/private/
+build.xml
+manifest.mf
+nbproject

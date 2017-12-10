@@ -1,4 +1,4 @@
-package ge.mziuri.TSP.model.owner;
+package ge.mziuri.trade.model.owner;
 
 import java.io.Serializable;
 

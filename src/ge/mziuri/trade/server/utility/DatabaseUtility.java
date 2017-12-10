@@ -1,4 +1,4 @@
-package ge.mziuri.TSP.server.utility;
+package ge.mziuri.trade.server.utility;
 
 public class DatabaseUtility {
 

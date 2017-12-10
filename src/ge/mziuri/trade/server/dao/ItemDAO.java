@@ -1,8 +1,8 @@
-package ge.mziuri.TSP.server.dao;
+package ge.mziuri.trade.server.dao;
 
-import ge.mziuri.TSP.model.exception.TSPException;
-import ge.mziuri.TSP.model.item.Item;
-import ge.mziuri.TSP.model.owner.Owner;
+import ge.mziuri.trade.model.exception.TSPException;
+import ge.mziuri.trade.model.item.Item;
+import ge.mziuri.trade.model.owner.Owner;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package ge.mziuri.TSP.model.exception;
+package ge.mziuri.trade.model.exception;
 
 public class TSPException extends Exception{
 

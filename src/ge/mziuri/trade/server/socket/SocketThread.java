@@ -1,4 +1,4 @@
-package ge.mziuri.TSP.server.socket;
+package ge.mziuri.trade.server.socket;
 
 public class SocketThread implements Runnable{
 
