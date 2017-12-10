@@ -50,11 +50,6 @@ public class ItemDAOimpl implements ItemDAO{
     }
 
     @Override
-    public void checkQuality(Item quality) throws TSPException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
     public List<Item> getOwnersItems(Owner owner) throws TSPException {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
