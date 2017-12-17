@@ -12,8 +12,6 @@ public interface ItemDAO {
 
     void deleteItem(Item item) throws TSPException;
 
-    void checkQuality(Item quality) throws TSPException;
-
     List <Item> getOwnersItems(Owner owner) throws TSPException;
 
     void sendTrade(Item item1,Item item2) throws TSPException;
