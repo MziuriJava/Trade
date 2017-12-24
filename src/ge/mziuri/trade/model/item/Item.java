@@ -1,5 +1,6 @@
 package ge.mziuri.trade.model.item;
 
+import ge.mziuri.trade.model.owner.Owner;
 import java.io.Serializable;
 
 
@@ -11,9 +12,19 @@ public class Item implements Serializable{
     private String name;
 
     private double quality;
+    
+    private Owner owner;
 
     public int getId() {
         return id;
+    }
+
+    public Owner getOwner() {
+        return owner;
+    }
+
+    public void setOwner(Owner owner) {
+        this.owner = owner;
     }
 
     public void setId(int id) {

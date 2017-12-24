@@ -9,7 +9,7 @@ public interface OwnerDAO {
 
     void deleteOwner(Owner owner) throws TSPException;
 
-    void changePassword(Owner password) throws TSPException;
+    void changePassword(Owner owner, String newPassword) throws TSPException;
 
 
 }
