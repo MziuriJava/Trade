@@ -85,7 +85,7 @@ public class ItemDAOimpl implements ItemDAO {
             PreparedStatement pstmt = con.prepareStatement("INSERT INTO OFFER (SENDER_ITEM_ID, RECEIVER_ITEM_ID) VALUES (?, ?)");
             pstmt.setInt(1, item1.getId());
             pstmt.setInt(2, item2.getId());
-            
+            pstmt.executeUpdate();
         } catch (Exception ex) {
             throw new TSPException("Can't Send The Trade Offer", ex);
         }
@@ -94,7 +94,18 @@ public class ItemDAOimpl implements ItemDAO {
     @Override
     public void acceptTrade(Item item1, Item item2) throws TSPException {
         try {
-
+            Connection con = DatabaseConnector.getConnection();
+            PreparedStatement pstms = con.prepareStatement("UPDATE item SET fk_owner=? WHERE id = ?");
+            PreparedStatement pstms1 = con.prepareStatement("UPDATE item SET fk_owner=? WHERE id = ?");
+            pstms.setInt(1, item2.getId());
+            pstms.setInt(2, item1.getOwner().getId());
+            pstms1.setInt(1, item1.getId());
+            pstms1.setInt(2, item2.getOwner().getId());
+            pstms.executeUpdate();
+            pstms1.executeUpdate();
+            pstms.close();
+            pstms1.close();
+            con.close();
         } catch (Exception ex) {
             throw new TSPException("Can't Accept The Trade Offer", ex);
         }
